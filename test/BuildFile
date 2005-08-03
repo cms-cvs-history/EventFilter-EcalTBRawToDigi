@@ -1,0 +1,13 @@
+<use name=FWCore/Framework>
+
+<library file=stubs/EcalDigiDumperModule.cc name=EcalDigiDumperModule>
+   <flags SEAL_PLUGIN_NAME="EcalDigiDumperModule"> 
+   <use name=cppunit>
+   <use name=DataFormats/EcalDigi>
+</library> 
+
+
+
+#<bin name=testEcalUnpackingModule file=testRunner.cc,testEcalUnpackingModule.cc>
+#   <use name=cppunit>
+#</bin>
