@@ -6,6 +6,12 @@
    <use name=DataFormats/EcalDigi>
 </library> 
 
+<library file=stubs/EcalDCCHeaderDumperModule.cc name=EcalDCCHeaderDumperModule>
+   <flags SEAL_PLUGIN_NAME="EcalDCCHeaderDumperModule"> 
+   <use name=cppunit>
+   <use name=DataFormats/EcalRawData>
+</library> 
+
 
 
 #<bin name=testEcalUnpackingModule file=testRunner.cc,testEcalUnpackingModule.cc>
