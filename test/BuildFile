@@ -12,6 +12,12 @@
    <use name=DataFormats/EcalRawData>
 </library> 
 
+<library file=stubs/EcalHexDumperModule.cc name=EcalHexDumperModule>
+   <flags SEAL_PLUGIN_NAME="EcalHexDumperModule"> 
+   <use name=cppunit>
+   <use name=DataFormats/FEDRawData>
+</library> 
+
 
 
 #<bin name=testEcalUnpackingModule file=testRunner.cc,testEcalUnpackingModule.cc>
