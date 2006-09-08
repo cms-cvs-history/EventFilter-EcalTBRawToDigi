@@ -18,6 +18,12 @@
    <use name=DataFormats/FEDRawData>
 </library> 
 
+<library file=stubs/EcalMatacqHist.cc name=EcalMatacqHist>
+   <flags SEAL_PLUGIN_NAME="EcalMatacqHist"> 
+   <use name=cppunit>
+   <use name=DataFormats/EcalDigi>
+   <use name=root>
+</library> 
 
 
 #<bin name=testEcalUnpackingModule file=testRunner.cc,testEcalUnpackingModule.cc>
