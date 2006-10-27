@@ -121,4 +121,4 @@ EcalMatacqHist:: analyze( const edm::Event & e, const  edm::EventSetup& c){
 } // analyze
 
 
-DEFINE_FWK_MODULE(EcalMatacqHist)
+DEFINE_FWK_MODULE(EcalMatacqHist);
