@@ -61,7 +61,7 @@ EcalMatacqHist:: analyze( const edm::Event & e, const  edm::EventSetup& c){
   for(EcalMatacqDigiCollection::const_iterator it = digiColl->begin();
       it!=digiColl->end(); ++it, ++iCh){
    
-    EcalMatacqDigi& digis = *it;
+    const EcalMatacqDigi& digis = *it;
 
     if(digis.size()==0) continue;
     
