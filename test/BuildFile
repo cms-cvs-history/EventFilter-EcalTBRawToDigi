@@ -25,6 +25,12 @@
    <use name=root>
 </library> 
 
+<library file=stubs/EcalGraphDumperModule.cc name=EcalGraphDumperModule>
+   <flags SEAL_PLUGIN_NAME="EcalGraphDumperModule"> 
+   <use name=cppunit>
+   <use name=root>
+   <use name=DataFormats/EcalDigi>
+</library> 
 
 #<bin name=testEcalUnpackingModule file=testRunner.cc,testEcalUnpackingModule.cc>
 #   <use name=cppunit>
