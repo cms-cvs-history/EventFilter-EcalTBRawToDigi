@@ -1,32 +1,32 @@
 <use name=FWCore/Framework>
 
 <library file=stubs/EcalDigiDumperModule.cc name=EcalDigiDumperModule>
-   <flags SEAL_PLUGIN_NAME="EcalDigiDumperModule"> 
+   <flags EDM_PLUGIN=1> 
    <use name=cppunit>
    <use name=DataFormats/EcalDigi>
 </library> 
 
 <library file=stubs/EcalDCCHeaderDumperModule.cc name=EcalDCCHeaderDumperModule>
-   <flags SEAL_PLUGIN_NAME="EcalDCCHeaderDumperModule"> 
+   <flags EDM_PLUGIN=1> 
    <use name=cppunit>
    <use name=DataFormats/EcalRawData>
 </library> 
 
 <library file=stubs/EcalHexDumperModule.cc name=EcalHexDumperModule>
-   <flags SEAL_PLUGIN_NAME="EcalHexDumperModule"> 
+   <flags EDM_PLUGIN=1> 
    <use name=cppunit>
    <use name=DataFormats/FEDRawData>
 </library> 
 
 <library file=stubs/EcalMatacqHist.cc name=EcalMatacqHist>
-   <flags SEAL_PLUGIN_NAME="EcalMatacqHist"> 
+   <flags EDM_PLUGIN=1> 
    <use name=cppunit>
    <use name=DataFormats/EcalDigi>
    <use name=root>
 </library> 
 
 <library file=stubs/EcalGraphDumperModule.cc name=EcalGraphDumperModule>
-   <flags SEAL_PLUGIN_NAME="EcalGraphDumperModule"> 
+   <flags EDM_PLUGIN=1> 
    <use name=cppunit>
    <use name=root>
    <use name=DataFormats/EcalDigi>
