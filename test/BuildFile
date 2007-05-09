@@ -32,6 +32,14 @@
    <use name=DataFormats/EcalDigi>
 </library> 
 
+<library file=stubs/EcalPnGraphDumperModule.cc name=EcalPnGraphDumperModule>
+   <flags EDM_PLUGIN=1>
+   <flags SEAL_PLUGIN_NAME=EcalPnGraphDumperModule>
+   <use name=cppunit>
+   <use name=root>
+   <use name=DataFormats/EcalDigi>
+</library>
+
 #<bin name=testEcalUnpackingModule file=testRunner.cc,testEcalUnpackingModule.cc>
 #   <use name=cppunit>
 #</bin>
