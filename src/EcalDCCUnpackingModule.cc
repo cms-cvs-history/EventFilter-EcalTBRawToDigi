@@ -1,7 +1,7 @@
 /* \file EcalDCCUnpackingModule.h
  *
- *  $Date: 2007/06/13 09:16:52 $
- *  $Revision: 1.35 $
+ *  $Date: 2007/03/18 12:13:18 $
+ *  $Revision: 1.32 $
  *  \author N. Marinelli
  *  \author G. Della Ricca
  *  \author G. Franzoni
@@ -30,12 +30,8 @@
 #include <iostream>
 #include <iomanip>
 
-// in full CMS this range cannot be used (allocated to pixel, see DataFormats/ FEDRawData/ src/ FEDNumbering.cc) 
 #define BEG_DCC_FED_ID 0
 #define END_DCC_FED_ID 35
-#define BEG_DCC_FED_ID_GLOBAL 600
-#define END_DCC_FED_ID_GLOBAL 670
-
 #define ECAL_SUPERVISOR_FED_ID 40 
 #define TBCAMAC_FED_ID 41
 #define TABLE_FED_ID 42
@@ -50,7 +46,7 @@ EcalDCCUnpackingModule::EcalDCCUnpackingModule(const edm::ParameterSet& pset){
   matacqFormatter_ = new MatacqDataFormatter();
 
   // digis
-  produces<EBDigiCollection>("ebDigis");
+  produces<EBDigiCollection>();
   produces<EcalMatacqDigiCollection>();
   produces<EcalPnDiodeDigiCollection>();
   produces<EcalRawDataCollection>();
@@ -175,9 +171,7 @@ void EcalDCCUnpackingModule::produce(edm::Event & e, const edm::EventSetup& c){
 //    } 
     if (data.size()>16){
 
-      if (	  (id >= BEG_DCC_FED_ID && id <= END_DCC_FED_ID) ||
-	  ( BEG_DCC_FED_ID_GLOBAL <= id &&  id <= END_DCC_FED_ID_GLOBAL )
-	  )
+      if (id >= BEG_DCC_FED_ID && id <= END_DCC_FED_ID)
 	{	// do the DCC data unpacking and fill the collections
 	  
 	  (*productHeader).setSmInBeam(id);
@@ -212,7 +206,7 @@ void EcalDCCUnpackingModule::produce(edm::Event & e, const edm::EventSetup& c){
 
   // commit to the event  
   e.put(productPN);
-  e.put(productEb,"ebDigis");
+  e.put(productEb);
   e.put(productMatacq);
   e.put(productDCCHeader);
   e.put(productTriggerPrimitives);
