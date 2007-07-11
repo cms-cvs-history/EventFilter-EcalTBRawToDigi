@@ -1,5 +1,6 @@
 
 module ecalEBunpacker = EcalDCC07UnpackingModule{ 
-   untracked string tbTowerStripChannelMapFile = "h2.map"
-   untracked string tbTowerMapFile = "h2_towers.map"
+   untracked FileInPath tbTowerStripChannelMapFile = "EventFilter/EcalTBRawToDigi/data/h2.map"
+   untracked FileInPath tbTowerMapFile = "EventFilter/EcalTBRawToDigi/data/h2_towers.map"
+   untracked string     tbName = "h2"
 }
