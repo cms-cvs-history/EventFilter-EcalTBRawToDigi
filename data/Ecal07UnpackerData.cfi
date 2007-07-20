@@ -6,8 +6,8 @@ module ecalEBunpacker = EcalDCC07UnpackingModule{
    include "EventFilter/EcalTBRawToDigi/data/h2_mapping.cfi"
 
 # use this for h4 data
-   untracked string     tbName = "h4"
-   include "EventFilter/EcalTBRawToDigi/data/h4_mapping.cfi"
+#   untracked string     tbName = "h4"
+#   include "EventFilter/EcalTBRawToDigi/data/h4_mapping.cfi"
 
 
 }
