@@ -9,5 +9,7 @@ module ecalEBunpacker = EcalDCC07UnpackingModule{
 #   untracked string     tbName = "h4"
 #   include "EventFilter/EcalTBRawToDigi/data/h4_mapping.cfi"
 
+   untracked bool    produceEEdigi = true
+   untracked bool    produceEBdigi = false
 
 }
