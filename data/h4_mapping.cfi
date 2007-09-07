@@ -209,8 +209,8 @@
 
 
 	# list of status IDs
-	untracked vint32 statusIDs = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22}
+	untracked vint32 statusIDs = {1, 2, 3, 4, 5, 6, 7, 8, 9,10,11,12,61,62,63,64,65,66,67,68,69,70}
 	# list of tower CCUIDs
-	untracked vint32 ccuIDs = { 1, 2, 3, 4, 5, 6, 7, 8, 9,10,11,12,13,14,15,16,17,18,19,20,69,70}
+	untracked vint32 ccuIDs =    {1, 2, 3, 4, 5, 6, 7, 8, 9,10,11,12,13,14,15,16,17,18,19,20,69,70}
 	# list of tower DQM position IDs
         untracked vint32 positionIDs = { 4, 3, 2, 1, 8, 7, 6, 5, 12,11,10,9,16,15,14,13,20,19,18,17,69,70}
