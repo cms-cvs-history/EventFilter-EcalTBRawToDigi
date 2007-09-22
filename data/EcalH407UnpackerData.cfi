@@ -1,0 +1,15 @@
+
+module ecalEBunpacker = EcalDCC07UnpackingModule{ 
+
+# use this for h2 data
+#   untracked string     tbName = "h2"
+#   include "EventFilter/EcalTBRawToDigi/data/h2_mapping.cfi"
+
+# use this for h4 data
+   untracked string     tbName = "h4"
+   include "EventFilter/EcalTBRawToDigi/data/h4_mapping.cfi"
+
+   untracked bool    produceEEdigi = true
+   untracked bool    produceEBdigi = false
+
+}
