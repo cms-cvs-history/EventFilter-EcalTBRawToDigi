@@ -1,5 +1,4 @@
-
-module ecalEBunpacker = EcalDCC07UnpackingModule{ 
+module ecalEBunpacker = EcalDCCTB07UnpackingModule{ 
 
 # use this for h2 data
    untracked string     tbName = "h2"
