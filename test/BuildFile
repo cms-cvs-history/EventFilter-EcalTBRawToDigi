@@ -28,14 +28,14 @@
 <library file=stubs/EcalGraphDumperModule.cc name=EcalGraphDumperModule>
    <flags EDM_PLUGIN=1> 
    <use name=cppunit>
-   <use name=root>
+   <use name=rootgraphics>
    <use name=DataFormats/EcalDigi>
 </library> 
 
 <library file=stubs/EcalPnGraphDumperModule.cc name=EcalPnGraphDumperModule>
    <flags EDM_PLUGIN=1>
    <use name=cppunit>
-   <use name=root>
+   <use name=rootgraphics>
    <use name=DataFormats/EcalDigi>
 </library>
 
